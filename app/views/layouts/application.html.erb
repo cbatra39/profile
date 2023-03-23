@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profile</title>
+        <link rel="icon" type="image/png" href= "<%= asset_path('icons/favicon.ico') %>"/>
+        <link rel="stylesheet" type="text/css" href="<%= asset_path('vendor/bootstrap/css/bootstrap.min.css')%>">
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("fonts/font-awesome-4.7.0/css/font-awesome.min.css")%>">
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("vendor/animate/animate.css") %>">	
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("vendor/css-hamburgers/hamburgers.min.css") %>">
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("vendor/select2/select2.min.css") %>">
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("css/util.css") %>">
+        <link rel="stylesheet" type="text/css" href="<%= asset_path("css/main.css") %>">
+
+   
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
